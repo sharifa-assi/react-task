@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import ProductsTable from "../../components/table/ProductsTable";
+import './dashboard.css'
 
 function Dashboard() {
   return (
-    <div>Dashboard</div>
-  )
+    <div>
+      <h3 className="title">Products</h3>
+      <ProductsTable />
+    </div>
+  );
 }
 
-export default Dashboard
+export default Dashboard;
