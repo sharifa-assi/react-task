@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Form from "../../components/form/Form";
+import './register.css'
 
 function Register() {
   const [values, setValues] = useState({
@@ -61,6 +62,7 @@ function Register() {
     setValues({ ...values, [e.target.name]: e.target.value });
   };
   return (
+    <div className="register-page">
     <form onSubmit={handleSubmit}>
       <h1>Register</h1>
       {inputs.map((input) => (
@@ -73,6 +75,7 @@ function Register() {
       ))}
       <button>Submit</button>
     </form>
+    </div>
   );
 }
 
